@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-color: #2D2FA8;
+  --background-color: #202075;
+  --secondary-color: #8C8CF5;
+  --white: #fff;
+  --accent-color: #E7F52A;
+}
+
+body {
+  font-family: poppins;
+  background: grey;
+  overflow-x: hidden;
+}
+
+nav {
+  background: white;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav .nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo a {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  width: 200px;
+}
+nav .logo a span {
+  color: #0F2B40;
+}
+nav a {
+  color: black;
+}
+nav .current {
+  color: #0F2B40;
+  font-weight: bold;
+}
+nav .current:hover {
+  color: #0F2B40;
+}
+nav .nav-menu, nav .nav-menu2 {
+  display: flex;
+  gap: 1em;
+}
+nav .nav-menu a:hover, nav .nav-menu2 a:hover {
+  color: #1d527a;
+}
+nav .nav-menu {
+  flex: 1;
+  margin-left: 5em;
+}
+nav .nav-menu2 a {
+  flex: 1;
+  background: #0F2B40;
+  padding: 0.5em 1em;
+  border: 20px;
+  font-weight: bold;
+  transition: all 300ms ease;
+  color: white;
+}
+nav .nav-menu2 a:hover {
+  color: white;
+  background: #1f5681;
+}
+
+.hero {
+  background-color: white;
+  height: 87vh;
+  width: 100%;
+  margin-top: 5em;
+}
+.hero .hero-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 600px 200px;
+  padding: 5em 0;
+  gap: 10em;
+}
+.hero .hero-container .hero-content {
+  color: black;
+}
+.hero .hero-container .hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.1em;
+  line-height: 1.2em;
+}
+.hero .hero-container .hero-content p {
+  line-height: 1.4em;
+  margin-bottom: 2.5em;
+  font-weight: 400;
+}
+.hero .hero-container .hero-content .hero-btn ::-moz-placeholder {
+  color: var(--background-color);
+}
+.hero .hero-container .hero-content .hero-btn :-ms-input-placeholder {
+  color: var(--background-color);
+}
+.hero .hero-container .hero-content .hero-btn ::placeholder {
+  color: var(--background-color);
+}
+.hero .hero-container .hero-content .hero-btn button {
+  background-color: #0F2B40;
+  border: none;
+  padding: 1em;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.hero .hero-container .hero-content .hero-btn button:hover {
+  background: #1d527a;
+}
+.hero .hero-container .hero-content .socialproof {
+  margin-top: 2em;
+  width: 300px;
+}
+.hero .hero-container .hero-content .socialproof .name {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.hero .hero-container .hero-content .socialproof .name a {
+  font-weight: bold;
+  color: black;
+  font-size: 1.3rem;
+}
+.hero .hero-container .hero-content .socialproof .name img {
+  width: 40px;
+  border-radius: 50%;
+}
+.hero .hero-container .hero-content .socialproof span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.hero .hero-container .hero-content .socialproof p {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.stars {
+  margin-top: 0.3em;
+  color: #FFED44;
+  font-size: 0.8em;
+  display: inline;
+  margin-right: 1em;
+}
+
+.hero-img img {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+}
+
+.benefits {
+  background-color: rgb(234, 234, 234);
+  padding-top: 5em;
+}
+.benefits .sec {
+  display: flex;
+  gap: 15em;
+}
+.benefits .sec .contents {
+  flex: 2;
+  padding-bottom: 10em;
+}
+.benefits .sec .contents h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.3em;
+}
+.benefits .sec .img {
+  flex: 1;
+}
+.benefits .sec .img img {
+  width: 200px;
+  border-radius: 100px 0 100px 0;
+}
+
+.features {
+  background-color: #0F2B40;
+  padding-top: 2em;
+}
+.features .f-c {
+  display: flex;
+  justify-content: space-between;
+}
+.features .card {
+  color: white;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  grid-template-columns: 300px;
+  grid-template-rows: 60px 120px 50px;
+}
+.features .card button {
+  padding: 0.5em 1em;
+  margin-bottom: 3em;
+  font-weight: bold;
+}
+.features .card .card-icon img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
